@@ -1,0 +1,73 @@
+* {
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+}
+body {
+   font: 100%/1.2 verdana,arial,sans-serif;
+}
+h1 {
+   font-size: 175%;
+   text-align:center;
+}
+section {
+   margin:20px auto;
+   /* border: 1px dashed #757474; */
+   overflow:auto;
+}
+div {
+   width:30%;
+   float:left;
+   padding:0 5px 5px;
+   border: 1px solid #000;
+   background-color:#eee;
+   position:relative;
+   margin:0 1.5%;
+}
+div h1 {
+   position:absolute;
+   top:0;
+   right:0;
+   font-size:125%;
+   padding:3px;
+   border:1px solid #000;
+   width:40%;
+   color:#000;
+}
+div#chicken h1 {
+   background-color:rgb(245, 204, 204);
+}
+div#beef h1 {
+   background-color:brown;
+   color:#fff;
+}
+div#sushi h1 {
+   background-color:rgb(242, 243, 158);
+}
+div p {
+   margin-top:35px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+   section {
+      width:95%;
+      margin:20px auto;
+   }
+   div#chicken, div#beef {
+      width:45%;
+      margin:0 2.5%;
+   }
+   div#sushi {
+      margin:2.5%;
+      width:95%;
+   }
+   div#sushi p::after {
+      content:"ut ea ex exercitation est ullamco sint velit veniam Excepteur ipsum dolore sit culpa adipiscing dolore sit. consequat quis est exercitation qui eiusmod.";
+   }
+}
+@media (max-width: 767px) {
+   section div {
+      width:90%;
+      margin:20px 5%;
+   }
+}
